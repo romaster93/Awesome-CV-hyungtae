@@ -684,7 +684,9 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+%    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+    % HT: To set location in a single line
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 6.0cm} R{4.5cm}}
 }{%
     \end{tabular*}
   \end{center}
@@ -694,6 +696,11 @@
 \newcommand*{\cvhonor}[4]{%
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
+
+\newcommand*{\cvhonorworanking}[3]{%
+  \honordatestyle{#3} & \honortitlestyle{#1} & \honorlocationstyle{#2} \\
+}
+
 
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
@@ -782,8 +789,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %               Modified by Hyungtae
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newenvironment{pubSubsectionNum}[1]{
- {\bf #1} % Bold company name and date on the right
+\newenvironment{pubSubsectionNum}{
   \smallskip
   \begin{enumerate}
    \itemsep -0.3em % Compress items in list together for aesthetics
@@ -798,9 +804,9 @@
 
 \newenvironment{journalSubsectionNum}{%
   \setcounter{journalSubsectionNumCounter}{0}%
-  \begin{itemize}[label={[j\thejournalSubsectionNumCounter]}, itemsep=-0.3em]%
+  \begin{enumerate}[label={[j\thejournalSubsectionNumCounter]}, itemsep=-0.3em]%
   }{%
-  \end{itemize}%
+  \end{enumerate}%
   \vspace{0.5em}%
 }
 
