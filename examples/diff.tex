@@ -1,0 +1,422 @@
+
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL v1.tex   Thu May 11 14:10:42 2023
+%DIF ADD v2.tex   Thu May 11 14:11:29 2023
+
+\documentclass[11pt, a4paper]{../awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\colorlet{awesome}{awesome-red}
+
+
+
+
+\setbool{acvSectionColorHighlight}{false}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%DIF 17c17
+%DIF < \name{Hyungtae}{Lim}
+%DIF -------
+\name{Hyeongtae}{Lim} %DIF > 
+%DIF -------
+\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
+\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+
+\mobile{(+82) 10-4494-5143}
+\email{shapelim@kaist.ac.kr}
+\homepage{limhyungtae.github.io/aboutme/}
+\github{limhyungtae}
+\linkedin{hyungtae-lim}
+
+
+\quote{``Towards Pervasive Robotics and AI"}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Hyungtae Lim~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+\cvsection{Education}
+
+
+\begin{cventries}
+\cventry
+  {Ph.D. in Electrical Engineering and Robotics Program} {Korea Advanced Institute of Science and Technology (KAIST)} {Daejeon, Republic of Korea} {Mar. 2020 - Feb. 2023} {
+    \begin{cvitems} \item {Dissertation: ``Robust LiDAR SLAM for Autonomous Vehicles Leveraging Ground Segmentation''}
+      \item {Advised by Prof. Hyun Myung}
+    \end{cvitems}
+  }
+
+  \cventry
+  {M.S. in Electrical Engineering and Robotics Program} {Korea Advanced Institute of Science and Technology (KAIST)} {Daejeon, Republic of Korea} {Mar. 2018 - Feb. 2020} {
+    \begin{cvitems} \item {Dissertation: ``Two-Stage Depth Prediction Using a 2D LiDAR and a Monocular Camera via Deep Learning''}
+      \item {Advised by Prof. Hyun Myung}
+    \end{cvitems}
+  }
+
+  \cventry
+  {B.S. in Mechanical Engineering} {Korea Advanced Institute of Science and Technology (KAIST)} {Daejeon, Republic of Korea} {Mar. 2013 - Aug. 2018} {
+    \begin{cvitems} \item {Listed on Dean’s list of ME, KAIST (GPA 4.23/4.3 at the semester) - Fall semester, 2015}
+    \end{cvitems}
+  }
+
+\end{cventries}
+ \cvsection{Experience}
+
+
+\begin{cventries}
+
+\cventry
+    {Site Reliability Engineer \& Infrastructure Team Lead} {Danggeun Pay Inc. (KarrotPay)} {Seoul, S.Korea} {Mar. 2021 - Present} {
+      \begin{cvitems} \item {Everything that matters.}
+        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
+        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
+      \end{cvitems}
+    }
+
+\cventry
+    {Site Reliability Engineer} {Danggeun Market Inc.} {Seoul, S.Korea} {Feb. 2021 - Mar. 2021} {
+    }
+
+\cventry
+    {Founding Member \& Director of Infrastructure Division} {Kasa} {Seoul, S.Korea} {Jun. 2018 - Jan. 2021} {
+      \begin{cvitems} \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
+        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
+        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
+        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
+        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
+        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
+        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
+        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
+        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Software Architect} {Omnious. Co., Ltd.} {Seoul, S.Korea} {Jun. 2017 - May 2018} {
+      \begin{cvitems} \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
+        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
+        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
+        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
+        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
+        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Co-founder \& Software Engineer} {PLAT Corp.} {Seoul, S.Korea} {Jan. 2016 - Jun. 2017} {
+      \begin{cvitems} \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
+        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
+        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Researcher} {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} {Pohang, S.Korea} {Mar. 2016 - Exp. Jun. 2017} {
+      \begin{cvitems} \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
+        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Software Engineer \& Security Researcher (Compulsory Military Service)} {R.O.K Cyber Command, MND} {Seoul, S.Korea} {Aug. 2014 - Apr. 2016} {
+      \begin{cvitems} \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
+        \item {Implemented a distributed web stress test tool with high anonymity.}
+        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Game Developer Intern at Global Internship Program} {NEXON} {Seoul, S.Korea \& LA, U.S.A} {Jan. 2013 - Feb. 2013} {
+      \begin{cvitems} \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
+        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
+        \item {Won the 2nd prize in final evaluation.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Researcher for <Detecting video’s torrents using image similarity algorithms>} {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} {Pohang, S.Korea} {Sep. 2012 - Feb. 2013} {
+      \begin{cvitems} \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
+        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Software Engineer Trainee} {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} {Seoul, S.Korea} {Jul. 2012 - Jun. 2013} {
+      \begin{cvitems} \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Software Engineer} {ShitOne Corp.} {Seoul, S.Korea} {Dec. 2011 - Feb. 2012} {
+      \begin{cvitems} \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Freelance Penetration Tester} {SAMSUNG Electronics} {S.Korea} {Sep. 2013, Mar. 2011 - Oct. 2011} {
+      \begin{cvitems} \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
+        \item {Conducted penetration testing on SAMSUNG Smart TV.}
+      \end{cvitems}
+}
+
+\end{cventries}
+ \cvsection{Extracurricular Activity}
+
+
+\begin{cventries}
+
+\cventry
+    {Core Member} {B10S (B1t 0n the Security, Underground hacker team)} {S.Korea} {Nov. 2011 - PRESENT} {
+      \begin{cvitems} \item {Gained expertise in penetration testing areas, especially targeted on web application and software.}
+        \item {Participated on a lot of hacking competition and won a good award.}
+        \item {Held several hacking competitions non-profit, just for fun.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Member} {WiseGuys (Hacking \& Security research group)} {S.Korea} {Jun. 2012 - PRESENT} {
+      \begin{cvitems} \item {Gained expertise in hardware hacking areas from penetration testing on several devices including wireless router, smartphone, CCTV and set-top box.}
+        \item {Trained wannabe hacker about hacking technique from basic to advanced and ethics for white hackers by hosting annual Hacking Camp.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Core Member \& President at 2013} {PoApper (Developers' Network of POSTECH)} {Pohang, S.Korea} {Jun. 2010 - Jun. 2017} {
+      \begin{cvitems} \item {Reformed the society focusing on software engineering and building network on and off campus.}
+        \item {Proposed various marketing and network activities to raise awareness.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Member} {PLUS (Laboratory for UNIX Security in POSTECH)} {Pohang, S.Korea} {Sep. 2010 - Oct. 2011} {
+      \begin{cvitems} \item {Gained expertise in hacking \& security areas, especially about internal of operating system based on UNIX and several exploit techniques.}
+        \item {Participated on several hacking competition and won a good award.}
+        \item {Conducted periodic security checks on overall IT system as a member of POSTECH CERT.}
+        \item {Conducted penetration testing commissioned by national agency and corporation.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Member} {MSSA (Management Strategy Club of POSTECH)} {Pohang, S.Korea} {Sep. 2013 - Jun. 2017} {
+      \begin{cvitems} \item {Gained knowledge about several business field like Management, Strategy, Financial and marketing from group study.}
+        \item {Gained expertise in business strategy areas and inisght for various industry from weekly industry analysis session.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+ \cvsection{Honors \& Awards}
+
+
+\cvsubsection{International Awards}
+
+
+\begin{cvhonors}
+
+\cvhonor
+    {2nd Place} {AWS ASEAN AI/ML GameDay} {Online} {2021} 
+
+\cvhonor
+    {Finalist} {DEFCON 28th CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2020} 
+
+\cvhonor
+    {Finalist} {DEFCON 26th CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2018} 
+
+\cvhonor
+    {Finalist} {DEFCON 25th CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2017} 
+
+\cvhonor
+    {Finalist} {DEFCON 22nd CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2014} 
+
+\cvhonor
+    {Finalist} {DEFCON 21st CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2013} 
+
+\cvhonor
+    {Finalist} {DEFCON 19th CTF Hacking Competition World Final} {Las Vegas, U.S.A} {2011} 
+
+\cvhonor
+    {6th Place} {SECUINSIDE Hacking Competition World Final} {Seoul, S.Korea} {2012} 
+
+\end{cvhonors}
+
+
+\cvsubsection{Domestic Awards}
+
+
+\begin{cvhonors}
+
+\cvhonor
+    {2nd Place} {AWS Korea GameDay} {Seoul, S.Korea} {2021} 
+
+\cvhonor
+    {3rd Place} {WITHCON Hacking Competition Final} {Seoul, S.Korea} {2015} 
+
+\cvhonor
+    {Silver Prize} {KISA HDCON Hacking Competition Final} {Seoul, S.Korea} {2017} 
+
+\cvhonor
+    {Silver Prize} {KISA HDCON Hacking Competition Final} {Seoul, S.Korea} {2013} 
+
+\cvhonor
+    {2nd Award} {HUST Hacking Festival} {S.Korea} {2013} 
+
+\cvhonor
+    {3rd Award} {HUST Hacking Festival} {S.Korea} {2010} 
+
+\cvhonor
+    {3rd Award} {Holyshield 3rd Hacking Festival} {S.Korea} {2012} 
+
+\cvhonor
+    {2nd Award} {Holyshield 3rd Hacking Festival} {S.Korea} {2011} 
+
+\cvhonor
+    {5th Place} {PADOCON Hacking Competition Final} {Seoul, S.Korea} {2011} 
+
+\end{cvhonors}
+
+\cvsubsection{Community}
+
+
+\begin{cvhonors}
+
+\cvhonor
+    {AWS Community Builder (Container)} {Amazon Web Services (AWS)} {} {2022} 
+
+\cvhonor
+    {HashiCorp Ambassador} {HashiCorp} {} {2022} 
+
+\end{cvhonors}
+ \cvsection{Certificates}
+
+
+\begin{cvhonors}
+
+\cvhonor
+    {AWS Certified Security - Specialty} {Amazon Web Services (AWS)} {} {2022} 
+
+\cvhonor
+    {AWS Certified Solutions Architect – Professional} {Amazon Web Services (AWS)} {} {2022} 
+
+\cvhonor
+    {AWS Certified Solutions Architect – Associate} {Amazon Web Services (AWS)} {} {2019} 
+
+\cvhonor
+    {AWS Certified SysOps Administrator – Associate} {Amazon Web Services (AWS)} {} {2021} 
+
+\cvhonor
+    {Certified Kubernetes Application Developer (CKAD)} {The Linux Foundation} {} {2020} 
+
+\cvhonor
+    {HashiCorp Certified: Terraform Associate} {HashiCorp} {} {2020} 
+
+\end{cvhonors}
+ \cvsection{Presentation}
+
+
+\begin{cventries}
+
+\cventry
+    {Presenter for <Hosting Web Application for Free utilizing GitHub, Netlify and CloudFlare>} {DevFest Seoul by Google Developer Group Korea} {Seoul, S.Korea} {Nov. 2017} {
+      \begin{cvitems} \item {Introduced the history of web technology and the JAM stack which is for the modern web application development.}
+        \item {Introduced how to freely host the web application with high performance utilizing global CDN services.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Presenter for <DEFCON 20th : The way to go to Las Vegas>} {6th CodeEngn (Reverse Engineering Conference)} {Seoul, S.Korea} {Jul. 2012} {
+      \begin{cvitems} \item {Introduced CTF(Capture the Flag) hacking competition and advanced techniques and strategy for CTF}
+      \end{cvitems}
+    }
+
+\cventry
+    {Presenter for <Metasploit 101>} {6th Hacking Camp - S.Korea} {S.Korea} {Sep. 2012} {
+      \begin{cvitems} \item {Introduced basic procedure for penetration testing and how to use Metasploit}
+      \end{cvitems}
+    }
+
+\end{cventries}
+ \cvsection{Writing}
+
+
+\begin{cventries}
+
+\cventry
+    {Founder \& Writer} {A Guide for Developers in Start-up} {Facebook Page} {Jan. 2015 - PRESENT} {
+      \begin{cvitems} \item {Drafted daily news for developers in Korea about IT technologies, issues about start-up.}
+      \end{cvitems}
+    }
+
+\cventry
+    {Undergraduate Student Reporter} {AhnLab} {S.Korea} {Oct. 2012 - Jul. 2013} {
+      \begin{cvitems} \item {Drafted reports about IT trends and Security issues on AhnLab Company magazine.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+ \cvsection{Program Committees}
+
+
+\begin{cvhonors}
+
+\cvhonor
+    {Problem Writer} {2016 CODEGATE Hacking Competition World Final} {S.Korea} {2016} 
+
+\cvhonor
+    {Organizer \& Co-director} {1st POSTECH Hackathon} {S.Korea} {2013} 
+
+\cvhonor
+    {Staff} {7th Hacking Camp} {S.Korea} {2012} 
+
+\cvhonor
+    {Problem Writer} {1st Hoseo University Teenager Hacking Competition} {S.Korea} {2012} 
+
+\cvhonor
+    {Staff \& Problem Writer} {JFF(Just for Fun) Hacking Competition} {S.Korea} {2012} 
+
+\end{cvhonors}
+
+\end{document}
