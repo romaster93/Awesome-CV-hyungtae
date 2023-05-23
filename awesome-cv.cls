@@ -778,3 +778,38 @@
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Modified by Hyungtae
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{pubSubsectionNum}[1]{
+ {\bf #1} % Bold company name and date on the right
+  \smallskip
+  \begin{enumerate}
+   \itemsep -0.3em % Compress items in list together for aesthetics
+  }{
+  \end{enumerate}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{journalSubsectionNumCounter}
+\newcounter{confSubsectionNumCounter}
+
+\newenvironment{journalSubsectionNum}{%
+  \setcounter{journalSubsectionNumCounter}{0}%
+  \begin{itemize}[label={[j\thejournalSubsectionNumCounter]}, itemsep=-0.3em]%
+  }{%
+  \end{itemize}%
+  \vspace{0.5em}%
+}
+
+\newcommand{\journalSubsectionNumReverse}{%
+  \begin{itemize}[label={[j\thejournalSubsectionNumCounter]}, itemsep=-0.3em, resume]%
+}
+
+\newcommand{\subsectionNumEnd}{%
+\end{itemize}%
+\stepcounter{journalSubsectionNumCounter}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

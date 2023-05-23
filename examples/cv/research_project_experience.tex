@@ -7,176 +7,125 @@
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
+\newcommand{\urban}{\href{https://urobot.kaist.ac.kr/}{Urban Robotics Lab.}}
 \begin{cventries}
-
 %---------------------------------------------------------
+
+  % 라스트마일
   \cventry
-    {Site Reliability Engineer \& Infrastructure Team Lead} % Job title
-    {Danggeun Pay Inc. (KarrotPay)} % Organization
-    {Seoul, S.Korea} % Location
-    {Mar. 2021 - Present} % Date(s)
+    {Supported by the Ministry of Trade, Industry \& Energy (MOTIE), Republic of Korea} % Job title
+    {Development of Artificial Intelligence Robot Autonomous Navigation Technology for Agile Movement in Crowded Space} % Organization
+    {\urban} % Location
+    {Mar. 2020 - June 2023} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Everything that matters.}
-        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
-        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
+        \item Was in charge of dynamic object detection in order to generate static maps and perform moving-object-robust SLAM in dynamic environments
+        \item Keywords: SLAM, 3D LiDAR, Static Map Building, OpenCV, C++, ROS
       \end{cvitems}
     }
 
 %---------------------------------------------------------
+  % LG Semantic SLAM
   \cventry
-    {Site Reliability Engineer} % Job title
-    {Danggeun Market Inc.} % Organization
-    {Seoul, S.Korea} % Location
-    {Feb. 2021 - Mar. 2021} % Date(s)
-    {
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Founding Member \& Director of Infrastructure Division} % Job title
-    {Kasa} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2018 - Jan. 2021} % Date(s)
+    {Supported by LG Electronics} % Job title
+    {Study of Semantic SLAM Towards Spatial AI Technologies} % Organization
+    {\urban} % Location
+    {Mar. 2022 - Dec. 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
-        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
-        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
-        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
-        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
-        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
-        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
-        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
-        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+        \item Studied various deep learning-aided SLAM methods, such as Kimera and Hydra
+        \item Run semantic SLAM in our real-world data to check the feasibility
+        \item Keywords: 3D semantic mapping, Semantic SLAM
       \end{cvitems}
     }
 
-%---------------------------------------------------------
+  % 현대 케피코
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May 2018} % Date(s)
+    {Supported by Hyundai Kefico} % Job title
+    {Deep Learning-Based Depth Prediction Using a Mono Camera and 2D LiDAR Sensor} % Organization
+    {\urban} % Location
+    {Mar. 2022 - Nov. 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+        \item Was in charge of development of deep learning-based depth prediction
+        \item Studied various calibration methods (2D LiDAR-to-camera, 3D LiDAR-to-IMU, camera-to-IMU)
+        \item Run deep learning models on NVIDIA Xavier
+        \item Keywords: Real-time deep learning, Depth prediction, Calibration, PyTorch, OpenCV, C++, ROS
       \end{cvitems}
     }
 
-%---------------------------------------------------------
+  % VPR
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {Supported by KAIST Institute for Security Convergence Research} % Job title
+    {A Study on the Visual Place Recognition in Multiple Photos} % Organization
+    {\urban} % Location
+    {Mar. 2020 - Dec. 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item Studied visual place recognition application. Struggled to improve performance of the SOTA deep learning-based VPR method.
+        \item Keywords: Visual place recognition, Deep learning, Semantic segmentation, Inpainting, Python, PyTorch
       \end{cvitems}
     }
 
-%---------------------------------------------------------
+  % 이동지능
   \cventry
-    {Researcher} % Job title
-    {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
-    {Pohang, S.Korea} % Location
-    {Mar. 2016 - Exp. Jun. 2017} % Date(s)
+    {Supported by the Ministry of Trade, Industry \& Energy (MOTIE)} % Job title
+    {Development of Robot Intelligence Technology for Mobility with Learning Capability Toward Robust and Seamless Indoor and Outdoor Autonomous Navigation} % Organization
+    {\urban} % Location
+    {Mar. 2020 - Sep. 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
-        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+        \item Developed SLAM algorithm applied to mobile robots. Was in charge of SLAM, static map building in low-dynamic environments, and movable area prediction.
+        \item Keywords: SLAM, 3D LiDAR, Registration, Static map building, Mobile robots, C++, ROS
       \end{cvitems}
     }
 
-%---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {Supported by Samsung Electronics Co., Ltd.} % Job title
+    {Indoor Navigation of Mobile Robots using Deep Learning-based Object Recognition} % Organization
+    {\urban} % Location
+    {Jan. 2019 - Sep. 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
+        \item Developed SLAM algorithm applied to robot cleaners. Was in charge of depth prediction using a 2D LiDAR sensor and a monocular camera for collision avoidance of mobile robots via deep learning.
+        \item Keywords: 2D LiDAR, Sensor Fusion, Deep Learning, Mobile Robots, PyTorch, ROS
       \end{cvitems}
     }
 
-%---------------------------------------------------------
-  \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
-      \end{cvitems}
-    }
+    \cventry
+      {Supported by IITP, which is a government-affiliated organization} % Job title
+      {IITP Artificial Intelligence R\&D Grand Challenge: Track 4, Intelligent Control} % Organization
+      {\urban} % Location
+      {Jan. 2019 - Jun. 2019} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item Was in charge of the task of a drone passing through windows. Implemented RGB-D camera-based path planning\&following. Participated in applying VIO to estimate odometry of UAV.
+          \item Keywords: VIO, Path planning and following, Projective geometry, OpenCV, ROS
+        \end{cvitems}
+      }
 
-%---------------------------------------------------------
-  \cventry
-    {Researcher for <Detecting video’s torrents using image similarity algorithms>} % Job title
-    {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} % Organization
-    {Pohang, S.Korea} % Location
-    {Sep. 2012 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
-        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
-      \end{cvitems}
-    }
+    \cventry
+      {Outsourced by Pixoneer Geomatics and Agency for Defense Development} % Job title
+      {Machine Learning-Based Classification of Small Object captured by Unmanned Aerial Vehicle} % Organization
+      {\urban} % Location
+      {Jan. 2018 - Dec. 2019} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item Developed both SVM-based and Deep Learning-based classification algorithms. Implemented HOG-LBP for input to SVM and engaged in designing novel Deep Learning architecture.
+          \item Keywords: Deep Learning, SVM, HOG-LBP, Classification, Python, PyTorch
+        \end{cvitems}
+      }
 
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer Trainee} % Job title
-    {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} % Organization
-    {Seoul, S.Korea} % Location
-    {Jul. 2012 - Jun. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
-      \end{cvitems}
-    }
+    \cventry
+      {Supported by Ministry of Trade, Industry, and Energy} % Job title
+      {Range-Only SLAM in Complex Disaster Situation} % Organization
+      {\urban} % Location
+      {Jan. 2018 - Dec. 2018} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item Implemented monte carlo localization (MCL) using range measurements by ultra-wideband (UWB) sensors for UAV from scratch single-handed. Struggled to cover None-line-of-sight (NLOS) issues.
+          \item Keywords: MCL, Beacon-based localization, UWB sensors, NLOS, ROS
+        \end{cvitems}
+      }
 
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
-      \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
-    }
-
-%---------------------------------------------------------
 \end{cventries}

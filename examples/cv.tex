@@ -12,7 +12,30 @@
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
+%\usepackage{natbib}
+%\usepackage{bibentry}
+%\nobibliography*
 
+% enable korean?
+%\usepackage{ifthen}
+%\newboolean{kor}
+%\setboolean{kor}{true}
+%\newcommand\koronly[1]{\ifthenelse{\boolean{kor}}{#1}}
+%\newcommand{\rss}{Robotics: Science and Systems~(RSS)}
+%\newcommand{\iccv}{CVF Int. Conf. Comput. Vis.~(ICCV)}
+%\newcommand{\ral}{IEEE Robot. Automat. Lett.~(RA-L)}
+%\newcommand{\iros}{Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst.~(IROS)}
+%\newcommand{\icra}{Proc. IEEE Int. Conf. Robot. Automat.~(ICRA)}
+%\newcommand{\tro}{IEEE Trans. Robot.~(T-RO)}
+%\newcommand{\iccas}{Proc. Int. Conf. Control, Automat. Syst.~(ICCAS)}
+%\newcommand{\urconf}{Proc. Int. Conf. Ubiquti. Robot.~(UR)}
+
+%\usepackage{kotex}
+
+% the below is to make domestic bib items to have bullet instead of [1]
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -27,7 +50,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-skyblue}
 % Uncomment if you would like to specify your own color
- \definecolor{awesome}{HTML}{101CA4}
+\definecolor{awesome}{HTML}{101CA4}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -43,6 +66,7 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\usepackage{enumitem}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -72,7 +96,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Towards Pervasive Robotics and AI"}
+\quote{``Towards Pervasive Robotics and Artifical Inteligence"}
 
 
 %-------------------------------------------------------------------------------
@@ -105,5 +129,7 @@
 % \input{cv/writing.tex}
 % \input{cv/committees.tex}
 
+%\bibliographystyle{IEEETran}
+%\nobibliography{cv/ref}
 %-------------------------------------------------------------------------------
 \end{document}
