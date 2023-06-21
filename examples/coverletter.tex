@@ -23,12 +23,16 @@
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
+\usepackage[font=footnotesize]{subcaption}
+\captionsetup[figure]{labelformat={default},labelsep=period,name={Fig.}}
+
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+% \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{101CA4}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -39,7 +43,7 @@
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -51,16 +55,16 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,left]{profile}
-\name{Claud D.}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+\name{Hyungtae}{Lim}
+\position{Robotics Researcher{\enskip\cdotp\enskip}Filed Robotics Engineer}
+\address{30, Mannyeon-ro 18beon-gil, Seo-gu, Daejeon, Republic of Korea}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+\mobile{(+82) 10-4494-5143}
+\email{shapelim@kaist.ac.kr}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\homepage{limhyungtae.github.io/aboutme/}
+\github{limhyungtae}
+\linkedin{hyungtae-lim}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -73,23 +77,22 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
-
+\quote{``Towards Pervasive Robotics and Artifical Inteligence"}
 
 %-------------------------------------------------------------------------------
 %	LETTER INFORMATION
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
-\recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
-% The date on the letter, default is the date of compilation
-\letterdate{\today}
+%\recipient
+%  {Company Recruitment Team}
+%  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+%% The date on the letter, default is the date of compilation
+%\letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Software Engineer}
+\lettertitle{Job Application for Postdoctoral Research Assistant}
 % How the letter is opened
-\letteropening{Dear Mr./Ms./Dr. LastName,}
+\letteropening{Dear Prof. Maurice Fallon:}
 % How the letter is closed
 \letterclosing{Sincerely,}
 % Any enclosures with the letter
@@ -107,11 +110,11 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Cover Letter}
+  {Hyungtae Lim~~~·~~~Supporting Statement}
   {}
 
 % Print the title with above letter information
-\makelettertitle
+%\makelettertitle
 
 %-------------------------------------------------------------------------------
 %	LETTER CONTENT
@@ -119,19 +122,123 @@
 \begin{cvletter}
 
 \lettersection{About Me}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
 
-\lettersection{Why Google?}
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+My research primarily focuses on developing robust algorithms for mobile robots to enhance the applicability in real-world environments.
+I received my Ph.D. with a focus on \href{https://www.dropbox.com/s/0j64sbsrhpyjdgm/hyungtae_lim_dissertation.pdf?dl=0}{``\textit{Robust LiDAR SLAM for Autonomous Vehicles Leveraging Ground Segmentation}''},
+and I have authored and co-authored 20 papers in renowned journals and conferences, such as IROS, ICRA, RA‑L, RSS, and T‑RO.
+Currently, I am a postdoctoral researcher at Urban Robotics Lab. at Korea Advanced Institute of Science and Technology (KAIST), Republic of Korea, specializing in the field of 3D perception and state estimation of mobile robots using various sensors, such as LiDAR, camera, and radar sensor, as shown in Fig. 1.
+Over the years, I've tried my best to contribute to the robotics community, promoting open source and engaging in various roles, including a visiting scholar at the University of Bonn, Germany (advisor: Prof. Cyrill Stachniss), a research intern at NAVER LABS, and an external expert for the CTO division at LG Electronics, Republic of Korea.
+
+% LiDAR, vision, radar -> terrestrial mobile robot
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{0.98\textwidth}
+		\includegraphics[width=1.0\textwidth]{src/overview.png}
+	\end{subfigure}
+	\captionsetup{font=footnotesize}
+	\caption{(L-R): Mapping results using LiDAR(-inertial), camera(-inertial), and radar sensors. During my Ph.D. course, I've studied various robust SLAM and odometry approaches, particularly, dynamic object-robust visual inertial navigation system~(VINS) and outlier-robust radar odometry.}
+	\label{figure:mainfig}
+\end{figure}
+
+\lettersection{Why Oxford Robotics Institute?}
+
+The Oxford Robotics Institute (ORI) is, without doubt, the best place for the research I am passionate about.
+And I believe that I am highly suitable for the role at ORI Group for the following three reasons.
+First, during my Ph.D.~course, I exploited a variety of our own mobile robots, autonomous cars, and quadruped robots to conduct field tests~(Figs. 2(a)-2(c)) because my advisor considers availability and applicability to be important.
+Thus, I could leverage these real-world experiences as a field robotics engineer when I conduct a field test in ORI group.
+
+\newcommand{\platformwidth}{0.15\textwidth}
+\begin{figure}[b!]
+	\centering
+	\begin{subfigure}[b]{\platformwidth}
+		\includegraphics[width=1.0\textwidth]{src/lig_platform_comp.png}
+        \caption{}
+	\end{subfigure}
+    \begin{subfigure}[b]{\platformwidth}
+		\includegraphics[width=1.0\textwidth]{src/url_autocar_comp.png}
+        \caption{}
+	\end{subfigure}
+    \begin{subfigure}[b]{\platformwidth}
+		\includegraphics[width=1.0\textwidth]{src/quadruped_platform.png}
+        \caption{}
+	\end{subfigure}
+    \begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=1.0\textwidth]{src/quadruped_sequential.pdf}
+        \caption{}
+	\end{subfigure}
+	\captionsetup{font=footnotesize}
+	\caption{(a)-(c) Our own mobile robots, autonomous cars, and quadruped robots that I employed when I conducted field tests in KAIST campus. (d)~Qualitative results of my ground segmentation algorithm (\href{https://github.com/url-kaist/Patchwork2}{\texttt{https://github.com/url-kaist/Patchwork2}}) in a harsh environment: data were acquired by a VLP-16 mounted on a quadruped robot traversing the rough mountain terrain. The orange and cyan colors represent the estimated ground and non-ground points, respectively~(best viewed in color).}
+	\label{figure:why_ori}
+\end{figure}
+
+Second, I've already involved in \textit{Digiforest} project with a colleague in StachnissLab who studies tree instance segmentation.
+That is, I am currently collaborating with Prof. Cyrill Stachniss on robust ground segmentation.
+Thus, this ongoing collaboration would allow me to quickly ease into your ORI group, continue to contribute valuable research, and provide an opportunity to further deepen this collaborative relationship.
+
+Third, the opportunity to work on quadruped and handheld mapping devices at ORI aligns with my experiences and research interests.
+Since I got the \href{https://hilti-challenge.com/leader-board-2022.html}{2nd cash prize in HILTI SLAM Challenge'22} and have studied robust ground segmentation easily applicable to a quadruped platform~(Fig. 2(d)),
+I am confident that my research pursuits and background regarding various platforms would contribute significantly to ORI group.
+
+% 1. 다양한 field 경험 - last mile robot
+% 2. quadruped robot 경험
+% 3. Digiforest
+
 
 \lettersection{Why Me?}
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Diligence - hardworking
+% communication skills
+% willingness to help junior colleagues
+Besides my academic and practical experiences, I would also like to mention that my personal characteristics make me suitable for the postdoc position that ORI Group is seeking.
+
+\textbf{Diligence and Resilience} I pride myself on my diligence and work ethic, which have allowed me to make substantial strides in my research field.
+This was evident when I was a visiting scholar at Cyrill Stachniss's lab, where I managed to submit an RSS paper in just 80 days and the paper has been accepted.
+This feat is a testament to my ability to work under pressure and produce high-quality results in a short time frame.
+
+\textbf{Communication Skills} My strong communication skills have been instrumental in managing research projects and coordinating with team members.
+I am proactive in addressing needs, helping my colleagues, and striving for effective communication to save time.
+This strength has enabled me to successfully perform numerous projects and write a number of papers at the same time during my Ph.D. course.
+
+\textbf{Teamwork} As an extension of the second reason, I firmly believe in the power of collaboration and teamwork, which I have consistently demonstrated throughout my research career.
+For example, at the HILTI 2023 competition, we achieved 1,177 score (of course, ranking is not determined yet).
+Despite not having a senior Ph.D. student in our team except me, this accomplishment made possible by a cooperative team consisting of myself, two master's students, and an intern student.
+
+\textbf{Enthusiasm for Open-Source} Further, I understand the importance of sharing my research and contributing to robotics community via open source.
+For this reason, I am committed to cleaning, documenting, and open sourcing the codes I develop during my research.
+And I'm an initiator of my current lab's repository (\href{https://github.com/url-kaist}{\texttt{https://github.com/url-kaist}}) to increase the brand value of affiliation that I belong to.
+
+\textbf{Experience of Postdoc} Finally, currently working as a postdoc, I have a keen understanding of the responsibilities and expectations that come with the postdoc position.
+In my visiting scholar, I observed what postdoc does, which provide me with some insights into how to support other students effectively and make a progress via discussion.
+I've applied these learnings to my current role, significantly reducing my current advisor's burden of proofreading and further increasing my colleagues' productivity.
+
+\newcommand{\hyungtaelim}{\underline{Hyungtae Lim}}
+
+\lettersection{Selected Publications Highly Relevant to the Position}
+
+\textbf{[Bold texts with braket]} indicate the keywords of the paper.
+
+	\begin{pubSubsectionNum}
+		\item Dong-Uk Seo, \hyungtaelim, Eungchang Mason Lee, Hyunjun Lim, and Hyun Myung, ``Enhancing Robustness of Line Tracking Through Semi-Dense Epipolar Search in Line-based SLAM,'' in \textit{Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst. (IROS)}, 2023 (Submitted) \textbf{[Line-based VINS]}
+    \item {\hyungtaelim, Beomsoo Kim, Daebeom Kim, and Hyun Myung, ``Quatro++: Robust Global Registration Exploiting Ground Segmentation for Loop Closing in LiDAR SLAM,'' \textit{Int. J. Robot. Res. (IJRR)}, 2023 (Under revision) \textbf{[LiDAR, SLAM, Loop closing, 3D point cloud registration]}}
+    \item {\hyungtaelim, Seungjae Lee, Minho Oh, Changki Sung, Byeongho Yu, Dong-Uk Seo, and Hyun Myung, ``Patchwork2:~Fast and Outlier-Robust Cascaded Ground Segmentation for Terrestrial Robots,'' \textit{IEEE Trans. Robot. (T-RO)}, 2023 (Under revision)} \textbf{[LiDAR, Generalized ground segmentation for a quadruped robot]}
+	\item \hyungtaelim, Lucas Nunes, Benedikt Mersch, Xieyuanli Chen, Jens Behley, Hyun Myung, and Cyrill Stachniss, ``ERASOR2:~Instance-Aware Robust 3D Mapping of the Static World in Dynamic Scenes,'' in \textit{Robotics: Science and Systems~(RSS)}, 2023 (Accepted. To appear) \textbf{[LiDAR, Static map building, Instance segmentation]}
+    \item Alex Junho Lee, Seungwon Song, \hyungtaelim, Woojoo Lee, and Hyun Myung, ``$(LC)^2$: LiDAR-Camera Loop Constraints For Cross-Modal Place Recognition,'' \textit{IEEE Robot. Automat. Lett. (RA-L)}, vol. 8, no. 6, pp. 3589--3596, 20th, Apr. 2023 \textbf{[LiDAR and camera, Multimodal loop closing, Deep learning]}
+    \item Seungwon Song, \hyungtaelim, Alex Junho Lee, and Hyun Myung, ``DynaVINS: A Visual-Inertial SLAM for Dynamic Environments,'' \textit{IEEE Robot. Automat. Lett. (RA-L)}, vol. 7, no. 4, pp. 11523-11530, 31st Oct. 2022 \textbf{[VINS, SLAM]}
+    \item Seungjae Lee$^*$, \hyungtaelim$^*$, and Hyun Myung, ``Patchwork++: Fast and Robust Ground Segmentation Solving Partial Under-Segmentation Using 3D point cloud,'' in \textit{Proc. IEEE/RSJ Int. Conf. Intell. Robot. Syst. (IROS)}, Kyoto, Japan, 22-27 Oct. 2022, pp. 13276--13283 \textbf{[LiDAR, Ground segmentation]}
+    \item \hyungtaelim, Suyong Yeon, Soohyun Ryu, Yonghan Lee, Youngji Kim, Jaeseong Yun, Euigon Jung, Donghwan Lee, and Hyun Myung, ``A Single Correspondence Is Enough: Robust Global Registration to Avoid Degeneracy in Urban Environments,'' in \textit{Proc. IEEE Int. Conf. Robot. Automat. (ICRA)}, Philadelphia, USA, 23-27 May 2022, pp. 8010--8017 \textbf{[LiDAR, 3D point cloud registration, Loop closing]}
+    \item Minho Oh$^*$, Euigon Jung$^*$, \hyungtaelim, Wonho Song, Sumin Hu, Eungchang Mason Lee, Junghee Park, Jaekyung Kim, Jangwoo Lee, and Hyun Myung, ``TRAVEL: Traversable Ground and Above-Ground Object Segmentation Using Graph Representation of 3D LiDAR Scans,'' \textit{IEEE Robot. Automat. Lett. (RA-L)}, vol. 7, no. 3, pp. 11523--11530, 13th Jun. 2022 \textbf{Won 2022 IEEE RA-L Best Paper Award} \textbf{[LiDAR, Instance segmentation]}
+    \item Changki Sung, Seulgi Jeon, \hyungtaelim, and Hyun Myung, ``What If There Was No Revisit? Large-Scale Graph-based SLAM with Traffic Sign Detection in an HD Map Using LiDAR Inertial Odometry,'' \textit{J. Intell. Serv. Robot.}, pp. 1--10, 25th Nov. 2021 \textbf{[LiDAR, SLAM, Loop closing]}
+    \item \hyungtaelim, Minho Oh, and Hyun Myung, ``Patchwork: Concentric Zone-Based Region-Wise Ground Segmentation With Ground Likelihood Estimation Using a 3D LiDAR Sensor,'' \textit{IEEE Robot. Automat. Lett. (RA-L) with IROS}, vol. 6, no. 4, pp. 6458--6465, 28th Jun. 2021 \textbf{[LiDAR, Ground segmentation]}
+    \item \hyungtaelim, Sungwon Hwang, and Hyun Myung, ``ERASOR: Egocentric Ratio of Pseudo Occupancy-Based Dynamic Object Removal for Static 3D Point Cloud Map Building,'' \textit{IEEE Robot. Automat. Lett. (RA-L) with ICRA}, vol. 6, no. 2, pp. 2272--2279, 23rd Feb. 2021 \textbf{[LiDAR, Static map building]}
+
+\end{pubSubsectionNum}
 
 \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
 % Print the signature and enclosures with above letter information
-\makeletterclosing
+%\makeletterclosing
 
 \end{document}
